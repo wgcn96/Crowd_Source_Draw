@@ -1,0 +1,3007 @@
+20/08/12 09:19:06 [ImpOpt] Argument: alg -> CalGDTPVSeriesV2
+20/08/12 09:19:06 [ImpOpt] Argument: endstr -> 20190412
+in CalGDTPV, time is 1597195146
+begin to read TDW...
+transactions count here: 928516212
++----------+----+-----+-----+
+|        id|site|imppv|clkpv|
++----------+----+-----+-----+
+|1096439667|   4|    3|    0|
+|1029804029|   4|   40|    1|
+|2873780787|   4|  125|    4|
+| 347609924|   3|    7|    0|
+|1660996340|   4|  549|    1|
+| 190808423|   1|   16|    0|
+| 157010062|   1|   12|    0|
+|2436156961|   4|  106|    1|
+|1274680929|   4|    3|    0|
+|2782757508|   4|  673|    2|
+| 184803010|   2|   54|    1|
+|1727586203|   4|    1|    0|
+|1191281179|   4|   42|    2|
+|3269426275|   4|   47|    1|
+|1242786875|   2|   12|    0|
+|1762632965|   2|   25|    0|
+|1261732782|   1|   13|    0|
+| 812210453|   1|    2|    0|
+|2867162982|   4|   62|    0|
+| 605188420|   2|    6|    0|
++----------+----+-----+-----+
+only showing top 20 rows
+
+read TDW use 3.35 min!
+
+
+begin to read crowd trans...
+count trans: 2370165017
+[0,oDdoCtz1-9R_sPPkbxNsGg8K0V1A,1]
+[0,oDdoCt_235D_SCKn3AIrw8kquics,1]
+[1500195932,oDdoCt6HSrol4izATzpbcuI9fUOA,1]
+[1434222381,oDdoCt18WG0C4YPWu1P7if9lkgWM,1]
+[164163750,oDdoCt9UWDk6reDQG_iUilegeArA,1]
+[2053165042,oDdoCt6faWd9GMvnjkcp0OMHIfV0,1]
+[0,oDdoCt9qYDgj0cP33zqmmBgMLmYI,1]
+[0,oDdoCt_eymQ8Ll10eU1nkTEGqOXc,1]
+[2372215540,oDdoCt1_3dblAbWqex0ldyS8ToBY,1]
+[2670745328,oDdoCt7QCFq1R-GE0bGwxq1K4-vQ,1]
+[0,oDdoCt0QJJosQ3D5Npo-h5JTl9kA,1]
+[280951494,oDdoCt0_GADgMGVYjHliyhQw05ZQ,1]
+[0,oDdoCt3GVsZLqS7mo8M6I0d_DNKo,1]
+[0,oDdoCt_Wn6bISHDsOk5L_rtq4-z0,1]
+[0,oDdoCt7NVDD8PUFROJFuSYhCHQBQ,1]
+[0,oDdoCt4iJYpTFu1rCkU_xTCwpfNA,1]
+[0,oDdoCtzO9TViyqJ_umnZUz8QcFSw,1]
+[0,oDdoCt9kT9G605g2hGKGqcJVUQUA,1]
+[202284767,oDdoCtyJR_DJNLUavCsTjCLMePKs,1]
+[624002776,oDdoCt-HB11i-Ys_HD2qRhQA51Y4,1]
+read crowd trans use 4.716666666666667 min!
+
+
+hdfs count:
+2282438
+-----------currently calculate package 0 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200000
+0
+current posi: 1 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190516/fd4951bba3fa4914b9cea95a9d6a5d1f
+crowd cluster amount is : 27501989
+read crowd cluster use 0.2 min!
+dixtinct count joins: 22215237
+transform crowd cluster use 1.2 min!
+
+
+person count: 27501989
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 33425464| 8620153| 236341|0.007070687186272118| 0.3134374390157745|
+|   3| 35509941| 4270173| 707493|0.019923801056160585| 0.1552677880861635|
+|   4| 77172355| 5721081|1134260|0.014697750250073359|0.20802426326328616|
+|   2| 75182813| 8736383|1183236|0.015738118231888983|0.31766367879792257|
+|  10|221290573|16039217|3261330|0.014737771951993635| 0.5832020731300561|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.6333333333333333 min!
+
+
+-----------currently calculate package 1 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200001
+0
+current posi: 2 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190516/2ca27b14a40d4f02b09ce92708f4a94f
+crowd cluster amount is : 29355443
+read crowd cluster use 0.13333333333333333 min!
+dixtinct count joins: 23882810
+transform crowd cluster use 1.8666666666666667 min!
+
+
+person count: 29355443
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 42550450|11336242| 392775|0.009230807194753521|0.38617172290671953|
+|   3| 41988977| 5093760| 857956|0.020432886469227387|0.17352012027207356|
+|   4| 81192290| 5945936|1163812|0.014334021124419572|0.20254969410613222|
+|   2| 56854738| 7376698|1060319|0.018649615446297545|0.25128893473009417|
+|  10|222586455|17445915|3474862|0.015611291351937834| 0.5942991560372637|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7333333333333333 min!
+
+
+-----------currently calculate package 2 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200002
+0
+current posi: 3 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190516/3339ce9432d04b878757465e6a07cde0
+crowd cluster amount is : 29354058
+read crowd cluster use 0.15 min!
+dixtinct count joins: 23883514
+transform crowd cluster use 0.8 min!
+
+
+person count: 29354058
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 42546357|11336127| 393649|0.009252237506492036| 0.3861860257958201|
+|   3| 41602364| 5094457| 850747|0.020449486957039267|0.17355205198545293|
+|   4| 80749453| 5944244|1161594|0.014385162460481311|0.20250160982852866|
+|   2| 55647514| 7381423|1059325|0.019036340060042935|0.25146175700817924|
+|  10|220545688|17447637|3465315|0.015712458635781624| 0.5943858596995346|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.65 min!
+
+
+-----------currently calculate package 3 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200003
+0
+current posi: 4 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190516/c418205f3f4c4d77be889b1064059fb8
+crowd cluster amount is : 46682386
+read crowd cluster use 0.2 min!
+dixtinct count joins: 37448205
+transform crowd cluster use 0.6166666666666667 min!
+
+
+person count: 46682386
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 69273896|19467751| 610636|0.008814806662526964| 0.4170256207555458|
+|   3| 73007772| 9006660|1536118|0.021040472239037784|0.19293486841053925|
+|   4|129063343| 9738092|1823452| 0.01412834936407931|0.20860313352449467|
+|   2| 79634037|11069658|1478134| 0.01856158566970553|0.23712708257885534|
+|  10|350979048|28444783|5448340|0.015523262801715731| 0.6093258172365055|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7166666666666667 min!
+
+
+-----------currently calculate package 4 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200004
+0
+current posi: 5 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190516/609c06e92bbd41f482d65f53563587c5
+crowd cluster amount is : 30349390
+read crowd cluster use 0.15 min!
+dixtinct count joins: 24387399
+transform crowd cluster use 1.1 min!
+
+
+person count: 30349390
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 42396455|11365904| 408532|0.009635994330186333| 0.3745018927892785|
+|   3| 59903480| 6023346|1351383|0.022559340459018407| 0.1984667896125754|
+|   4| 87184718| 6099673|1297774| 0.01488533804743166|  0.200981733076019|
+|   2| 63977348| 8024669|1494679| 0.02336262828524871|0.26440956473919247|
+|  10|253462001|18018609|4552368|0.017960751442185608| 0.5937058043011738|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7 min!
+
+
+-----------currently calculate package 5 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200005
+0
+current posi: 6 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191129/9c88af39592846db8a28aa3b88ac1e0f
+crowd cluster amount is : 14817068
+read crowd cluster use 0.25 min!
+dixtinct count joins: 11405497
+transform crowd cluster use 0.7666666666666667 min!
+
+
+person count: 14817068
++----+---------+-------+-------+--------------------+-------------------+
+|site|    imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+---------+-------+-------+--------------------+-------------------+
+|   1| 33294493|6526445| 228480|0.006862396132597664|0.44046804671477513|
+|   3| 18306196|2487277| 317536|0.017345821054248516|0.16786566681073475|
+|   4| 31816544|2684448| 461980|0.014520118841317271|0.18117268544627047|
+|   2| 26351081|3268905| 444376|  0.0168636724998113| 0.2206175337792875|
+|  10|109768314|8739579|1452372|0.013231249957979677| 0.5898318749701358|
++----+---------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7833333333333333 min!
+
+
+-----------currently calculate package 6 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200006
+0
+current posi: 7 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191226/5198117ddf034e648ecd91c578e25e63
+crowd cluster amount is : 665051
+read crowd cluster use 0.03333333333333333 min!
+dixtinct count joins: 516087
+transform crowd cluster use 1.1166666666666667 min!
+
+
+person count: 665051
++----+-------+------+-----+--------------------+-------------------+
+|site|  imppv| impuv|clkpv|                 ctr|           impratio|
++----+-------+------+-----+--------------------+-------------------+
+|   1|1108309|258612| 7662|0.006913234486050371|  0.388860403187124|
+|   3| 946931|119068|17796|0.018793343971208038|0.17903589348786786|
+|   4|2302920|147239|29691|0.012892762232296389| 0.2213950509058704|
+|   2|1759865|202339|25531|0.014507362780667835| 0.3042458397927377|
+|  10|6118025|401049|80680|0.013187262229232473|  0.603034955213961|
++----+-------+------+-----+--------------------+-------------------+
+
+write result finish, use: 1.6 min!
+
+
+-----------currently calculate package 7 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200007
+0
+current posi: 8 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200416/ef416b820d3a4e68b6ee7e70c37d1d6c
+crowd cluster amount is : 9999986
+read crowd cluster use 0.21666666666666667 min!
+dixtinct count joins: 7308633
+transform crowd cluster use 1.3833333333333333 min!
+
+
+person count: 9999986
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|12789405|3149185| 120159|0.009395198603844353|0.31491894088651723|
+|   3|12596071|1490337| 271811|  0.0215790304770432| 0.1490339086474721|
+|   4|32643083|1972673| 458800|  0.0140550449845684|0.19726757617460663|
+|   2|21806876|2503054| 344509| 0.01579818218804014| 0.2503057504280506|
+|  10|79835435|5212730|1195279|0.014971785398300892| 0.5212737297832217|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7333333333333333 min!
+
+
+-----------currently calculate package 8 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200008
+0
+current posi: 9 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190927/44c16467d7e0487f86102a2a6cac377f
+crowd cluster amount is : 48513270
+read crowd cluster use 0.31666666666666665 min!
+dixtinct count joins: 20664185
+transform crowd cluster use 1.7333333333333334 min!
+
+
+person count: 48513270
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 16748291| 4727265| 138206|0.008251946422473792|0.09744272031137048|
+|   3| 31389935| 3157966| 771513|0.024578356087707733| 0.0650948905320132|
+|   4| 63378590| 4211142|1038290| 0.01638234615191029|0.08680391983471739|
+|   2| 41419353| 5091422| 719573|0.017372869151287804|0.10494905826797493|
+|  10|152936169|10513586|2667582|0.017442453393742327|0.21671567387644658|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.8166666666666667 min!
+
+
+-----------currently calculate package 9 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200009
+0
+current posi: 10 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200416/ef416b820d3a4e68b6ee7e70c37d1d6c
+crowd cluster amount is : 9999986
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 7308633
+transform crowd cluster use 1.1833333333333333 min!
+
+
+person count: 9999986
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|12789405|3149185| 120159|0.009395198603844353|0.31491894088651723|
+|   3|12596071|1490337| 271811|  0.0215790304770432| 0.1490339086474721|
+|   4|32643083|1972673| 458800|  0.0140550449845684|0.19726757617460663|
+|   2|21806876|2503054| 344509| 0.01579818218804014| 0.2503057504280506|
+|  10|79835435|5212730|1195279|0.014971785398300892| 0.5212737297832217|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 1.0833333333333333 min!
+
+
+-----------currently calculate package 10 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200010
+0
+current posi: 11 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200430/43d1a25ec241447487330bdd9244c20a
+crowd cluster amount is : 30000000
+read crowd cluster use 0.4166666666666667 min!
+dixtinct count joins: 25281274
+transform crowd cluster use 1.25 min!
+
+
+person count: 30000000
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 52905312|14388660| 308259|0.005826617183544821|           0.479622|
+|   3| 50272088| 6435405| 885088| 0.01760595263120959|          0.2145135|
+|   4| 81824433| 6244343|1051327| 0.01284857054860374|0.20814476666666668|
+|   2| 56696241| 7051575| 941176|0.016600324525924037|          0.2350525|
+|  10|241698074|19805131|3185850|0.013181114550379082| 0.6601710333333334|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 1.3333333333333333 min!
+
+
+-----------currently calculate package 11 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200011
+0
+current posi: 12 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191114/58d4f867734549f7beb33b7702d31189
+crowd cluster amount is : 82498
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 56136
+transform crowd cluster use 0.5833333333333334 min!
+
+
+person count: 82498
++----+------+-----+-----+--------------------+-------------------+
+|site| imppv|impuv|clkpv|                 ctr|           impratio|
++----+------+-----+-----+--------------------+-------------------+
+|   1|166443|25808| 6467|0.038854142258911456|0.31283182622609035|
+|   3| 90440|10570| 4554|0.050353825740822644|0.12812431816528885|
+|   4|280600|12431| 5059|0.018029223093371346| 0.1506824407864433|
+|   2|164758|13971| 7040| 0.04272933635999466|0.16934955998933307|
+|  10|702241|38801|23120| 0.03292317025066893|0.47032655337099083|
++----+------+-----+-----+--------------------+-------------------+
+
+write result finish, use: 0.55 min!
+
+
+-----------currently calculate package 12 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200012
+0
+current posi: 13 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/a5e391002b394d159f8d8264062e568f
+crowd cluster amount is : 147693076
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 97887567
+transform crowd cluster use 1.25 min!
+
+
+person count: 147693076
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116583343|34128630|  893725|0.007665975061291561|0.23107806353765697|
+|   3|173542438|19316765| 4084400|0.023535453616250337|0.13078991597412462|
+|   4|340918579|21947607| 5092837|0.014938572766959703| 0.1486028160182675|
+|   2|238347172|29826554| 4045402|0.016972729175070724|0.20194957548314588|
+|  10|869391532|62710146|14116364|0.016237061761489528| 0.4245977380821834|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 0.75 min!
+
+
+-----------currently calculate package 13 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200013
+0
+current posi: 14 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/32d4a5ce71c94f48ac9920b25ab187d5
+crowd cluster amount is : 147690706
+read crowd cluster use 0.15 min!
+dixtinct count joins: 97891766
+transform crowd cluster use 1.2 min!
+
+
+person count: 147690706
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116560128|34130790|  890500|0.007639833751726834| 0.2310963968172784|
+|   3|173995519|19315969| 4086300|0.023485087567111426| 0.1307866251245356|
+|   4|341873190|21947351| 5092772|0.014896669727158189|0.14860346730281052|
+|   2|238385847|29836757| 4040195| 0.01694813283105687|0.20202189973958146|
+|  10|870814684|62724780|14109767|0.016202950247908313| 0.4247036370724641|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 0.5666666666666667 min!
+
+
+-----------currently calculate package 14 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200014
+0
+current posi: 15 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191129/f74214b677ae4b149e441cf3522dad79
+crowd cluster amount is : 20056532
+read crowd cluster use 0.36666666666666664 min!
+dixtinct count joins: 14058893
+transform crowd cluster use 1.0333333333333334 min!
+
+
+person count: 20056532
++----+---------+-------+-------+--------------------+-------------------+
+|site|    imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+---------+-------+-------+--------------------+-------------------+
+|   1| 17843037|5165368| 154386|0.008652450813165943| 0.2575404362030285|
+|   3| 23038867|2592516| 513060| 0.02226932426841997|0.12926043246160404|
+|   4| 47821771|3085535| 666777|0.013942959159751737|0.15384190048409166|
+|   2| 27955255|3482429| 481133|0.017210824941500266|0.17363066556072604|
+|  10|116658930|8862150|1815356|0.015561226217315725|0.44185854264336427|
++----+---------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 1.2 min!
+
+
+-----------currently calculate package 15 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200015
+0
+current posi: 16 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/1611f57c379b40e2bb2a7182d8a9f46e
+crowd cluster amount is : 148140460
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 98170675
+transform crowd cluster use 1.7333333333333334 min!
+
+
+person count: 148140460
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116944353|34224219|  892694|0.007633493854979043| 0.2310254673166264|
+|   3|174261578|19378934| 4098704|0.023520411366870556|0.13081459312331015|
+|   4|342597881|22014587| 5107921|0.014909377095651096|0.14860617416740843|
+|   2|239092562|29928136| 4061920|0.016988901561898022| 0.2020254021082424|
+|  10|872896374|62899909|14161239| 0.01622327623507805| 0.4245964201812253|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 1.3833333333333333 min!
+
+
+-----------currently calculate package 16 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200016
+0
+current posi: 17 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200201/b82e46e2b2dd45b2822f759de7127929
+crowd cluster amount is : 93415
+read crowd cluster use 0.0 min!
+dixtinct count joins: 62737
+transform crowd cluster use 0.5333333333333333 min!
+
+
+person count: 93415
++----+------+-----+-----+--------------------+-------------------+
+|site| imppv|impuv|clkpv|                 ctr|           impratio|
++----+------+-----+-----+--------------------+-------------------+
+|   1|178912|27731| 6770|0.037839831872652475|0.29685810629984477|
+|   3| 99527|11619| 4709|0.047313794246787305| 0.1243804528180699|
+|   4|338456|14107| 5532|0.016344812915120428|0.15101429106674516|
+|   2|191339|15608| 7551| 0.03946398800035539|0.16708237435101428|
+|  10|808234|42810|24562|0.030389713869993097| 0.4582775785473425|
++----+------+-----+-----+--------------------+-------------------+
+
+write result finish, use: 1.05 min!
+
+
+-----------currently calculate package 17 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200017
+0
+current posi: 18 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/a5e391002b394d159f8d8264062e568f
+crowd cluster amount is : 147693076
+read crowd cluster use 0.1 min!
+dixtinct count joins: 97887567
+transform crowd cluster use 1.2666666666666666 min!
+
+
+person count: 147693076
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116583343|34128630|  893725|0.007665975061291561|0.23107806353765697|
+|   3|173542438|19316765| 4084400|0.023535453616250337|0.13078991597412462|
+|   4|340918579|21947607| 5092837|0.014938572766959703| 0.1486028160182675|
+|   2|238347172|29826554| 4045402|0.016972729175070724|0.20194957548314588|
+|  10|869391532|62710146|14116364|0.016237061761489528| 0.4245977380821834|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 0.8666666666666667 min!
+
+
+-----------currently calculate package 18 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200018
+0
+current posi: 19 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190216/1aff04985c284afdb500d116ea0f7dce
+current posi: 20 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191107/cc6bc5e9f53c47d2b353eb1e1ad478cd
+crowd cluster amount is : 22671109
+read crowd cluster use 0.05 min!
+dixtinct count joins: 12252969
+transform crowd cluster use 1.1 min!
+
+
+person count: 22671109
++----+---------+-------+-------+--------------------+-------------------+
+|site|    imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+---------+-------+-------+--------------------+-------------------+
+|   1| 17697903|4449017| 188849| 0.01067069923481895|0.19624170127716292|
+|   3| 17180808|1940558| 393497| 0.02290328836688007|0.08559607736877803|
+|   4| 45618044|2744563| 666630|0.014613296440329621|0.12105993579758273|
+|   2| 26641346|3029556| 479498|0.017998264802386487|0.13363069270232877|
+|  10|107138101|7580649|1728474|0.016133140160847166| 0.3343748645026584|
++----+---------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 1.0333333333333334 min!
+
+
+-----------currently calculate package 19 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200019
+0
+current posi: 21 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/1611f57c379b40e2bb2a7182d8a9f46e
+crowd cluster amount is : 148140460
+read crowd cluster use 0.15 min!
+dixtinct count joins: 98170675
+transform crowd cluster use 1.75 min!
+
+
+person count: 148140460
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116944353|34224219|  892694|0.007633493854979043| 0.2310254673166264|
+|   3|174261578|19378934| 4098704|0.023520411366870556|0.13081459312331015|
+|   4|342597881|22014587| 5107921|0.014909377095651096|0.14860617416740843|
+|   2|239092562|29928136| 4061920|0.016988901561898022| 0.2020254021082424|
+|  10|872896374|62899909|14161239| 0.01622327623507805| 0.4245964201812253|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 0.8 min!
+
+
+-----------currently calculate package 20 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200020
+0
+current posi: 22 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/41029e0d26b641318696bd13101347b2
+crowd cluster amount is : 1416956
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 990336
+transform crowd cluster use 1.3333333333333333 min!
+
+
+person count: 1416956
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 2074764|419586| 41247|0.019880333377675728|0.29611787521983746|
+|   3| 4906167|209204|128914|0.026275909482901826| 0.1476432578005245|
+|   4| 9097489|237494| 93393|0.010265799716822961|0.16760859193934038|
+|   2| 5156868|267101| 94945| 0.01841136907130452| 0.1885033833090089|
+|  10|21235288|685203|358499| 0.01688222924030981| 0.4835739430158735|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.7666666666666667 min!
+
+
+-----------currently calculate package 21 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200021
+0
+current posi: 23 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190830/7f0ab8c1889d4b82a2a85bffc6096111
+crowd cluster amount is : 10590929
+read crowd cluster use 0.08333333333333333 min!
+dixtinct count joins: 7625864
+transform crowd cluster use 0.9833333333333333 min!
+
+
+person count: 10590929
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|14413461|3297404| 251279| 0.01743363374001567|0.31134228168274947|
+|   3|14823761|1414682| 392876| 0.02650312562378738|0.13357487336568868|
+|   4|33371657|1690362| 486294|0.014572066349597205|0.15960469567872657|
+|   2|20243325|1899954| 489776|0.024194444341529862|0.17939446105247236|
+|  10|82852204|5154084|1620225|0.019555605304114782| 0.4866507933345602|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7 min!
+
+
+-----------currently calculate package 22 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200022
+0
+current posi: 24 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/abe62c24b9404ab29f316f5b2b755041
+crowd cluster amount is : 836555
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 628490
+transform crowd cluster use 0.8333333333333334 min!
+
+
+person count: 836555
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 1318468|304657| 20643|0.015656807749600293| 0.3641804782710043|
+|   3| 2867672|124785| 74285| 0.02590428751963265|0.14916532684641176|
+|   4| 4450927|123857| 36929|0.008296923315075713|0.14805601544429237|
+|   2| 2907639|145134| 44805|0.015409409489967633|0.17349008732241156|
+|  10|11544706|436816|176662|0.015302425198181747| 0.5221605274010674|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.43333333333333335 min!
+
+
+-----------currently calculate package 23 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200023
+0
+current posi: 25 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/f56cdd258d1c40e29d4e2215d5ab9129
+crowd cluster amount is : 1566049
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 1210898
+transform crowd cluster use 0.8 min!
+
+
+person count: 1566049
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 2386766|567873| 37183|0.015578820881477278| 0.3626150905878424|
+|   3| 4865513|297084|121596|0.024991403784143624| 0.1897028764744909|
+|   4| 7214132|266498| 72263|0.010016866894035208| 0.1701721976770842|
+|   2| 5282062|349156| 92501| 0.01751228970807234|0.22295343249157593|
+|  10|19748473|881268|323543| 0.01638319074087399| 0.5627333499781936|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.5 min!
+
+
+-----------currently calculate package 24 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200024
+0
+current posi: 26 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/41029e0d26b641318696bd13101347b2
+crowd cluster amount is : 1416956
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 990336
+transform crowd cluster use 0.9833333333333333 min!
+
+
+person count: 1416956
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 2074764|419586| 41247|0.019880333377675728|0.29611787521983746|
+|   3| 4906167|209204|128914|0.026275909482901826| 0.1476432578005245|
+|   4| 9097489|237494| 93393|0.010265799716822961|0.16760859193934038|
+|   2| 5156868|267101| 94945| 0.01841136907130452| 0.1885033833090089|
+|  10|21235288|685203|358499| 0.01688222924030981| 0.4835739430158735|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 1.0 min!
+
+
+-----------currently calculate package 25 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200025
+0
+current posi: 27 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/89116dd64a5d44d3bfe70f031be2b1a1
+crowd cluster amount is : 1195277
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 830970
+transform crowd cluster use 0.7666666666666667 min!
+
+
+person count: 1195277
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 1355728|314769| 24893| 0.01836135271971959| 0.2633439780067717|
+|   3| 3241535|137155| 85308| 0.02631716146825501|0.11474746021215167|
+|   4| 6568819|184671| 67174| 0.01022619134428883|0.15450058856649965|
+|   2| 2358098|197664| 58637|0.024866226933740666|0.16537087219113225|
+|  10|13524180|524413|236012| 0.01745111348710236| 0.4387376315280893|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.31666666666666665 min!
+
+
+-----------currently calculate package 26 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200026
+0
+current posi: 28 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190830/7f0ab8c1889d4b82a2a85bffc6096111
+crowd cluster amount is : 10590929
+read crowd cluster use 0.08333333333333333 min!
+dixtinct count joins: 7625864
+transform crowd cluster use 0.75 min!
+
+
+person count: 10590929
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|14413461|3297404| 251279| 0.01743363374001567|0.31134228168274947|
+|   3|14823761|1414682| 392876| 0.02650312562378738|0.13357487336568868|
+|   4|33371657|1690362| 486294|0.014572066349597205|0.15960469567872657|
+|   2|20243325|1899954| 489776|0.024194444341529862|0.17939446105247236|
+|  10|82852204|5154084|1620225|0.019555605304114782| 0.4866507933345602|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.6666666666666666 min!
+
+
+-----------currently calculate package 27 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200027
+0
+current posi: 29 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200117/d097c735abfa4d0fb1e5e94fbda5f3f2
+crowd cluster amount is : 1075565
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 924882
+transform crowd cluster use 1.0333333333333334 min!
+
+
+person count: 1075565
++----+-------+------+------+--------------------+-------------------+
+|site|  imppv| impuv| clkpv|                 ctr|           impratio|
++----+-------+------+------+--------------------+-------------------+
+|   1|2007472|547665| 15663|0.007802350418835232| 0.5091881941119318|
+|   3|1988724|254239| 35568| 0.01788483469802748|0.23637715991130243|
+|   4|2714238|229817| 38369|0.014136195867864203|0.21367095433562824|
+|   2|1712500|242625| 35583| 0.02077839416058394|0.22557911423298452|
+|  10|8422934|738148|125183|0.014862160857487426| 0.6862886018046329|
++----+-------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.7666666666666667 min!
+
+
+-----------currently calculate package 28 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200028
+0
+current posi: 30 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200302/81e853bc12aa4804a3d22871279d5042
+crowd cluster amount is : 33923046
+read crowd cluster use 0.21666666666666667 min!
+dixtinct count joins: 25696151
+transform crowd cluster use 0.8833333333333333 min!
+
+
+person count: 33923046
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 32569454| 8499861| 352763|0.010831099594116623|0.25056302432275684|
+|   3| 43402069| 4778010|1087585|0.025058367609157067| 0.1408484957394451|
+|   4|159180420| 7282716|2002455|0.012579782111392846| 0.2146834337930621|
+|   2| 63186266| 7757030|1214797|0.019225649447302363| 0.2286654918900856|
+|  10|298338209|16917333|4657600|0.015611811895002695|0.49869734575132196|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.4166666666666667 min!
+
+
+-----------currently calculate package 29 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200029
+0
+current posi: 31 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200305/5c04f7f8f537492c948659dae77ceb61
+crowd cluster amount is : 55563349
+read crowd cluster use 0.2 min!
+dixtinct count joins: 40954796
+transform crowd cluster use 1.2 min!
+
+
+person count: 55563349
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 52821549|13853050| 530463|0.010042549111916427|0.24931992490229485|
+|   3| 72798838| 7956992|1765062|0.024245744142234796|0.14320576680862054|
+|   4|231174579|11318353|2985630|0.012915044607910804| 0.2037017783071355|
+|   2|108395572|12863458|1937422|0.017873626793537285|0.23150976734681705|
+|  10|465190538|27205428|7218577|0.015517463083051788|0.48962901786211627|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.6833333333333333 min!
+
+
+-----------currently calculate package 30 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200030
+0
+current posi: 32 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/6be76db89f374aeab66777b1022d7ce2
+crowd cluster amount is : 7404133
+read crowd cluster use 0.1 min!
+dixtinct count joins: 5700986
+transform crowd cluster use 0.9166666666666666 min!
+
+
+person count: 7404133
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 9369897|2586664| 80239|0.008563487944424577| 0.3493540702199704|
+|   3|10804539|1354093|235158|0.021764741651633633|0.18288339769153256|
+|   4|23679354|1378129|290094| 0.01225092542642844|0.18612969270000956|
+|   2|12328088|1569253|245344|0.019901220692130038|0.21194284327415513|
+|  10|56181878|4049837|850835| 0.01514429617322511| 0.5469697802565134|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.7666666666666667 min!
+
+
+-----------currently calculate package 31 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200031
+0
+current posi: 33 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191024/8d48540eeb064ab7961e610450384c4f
+crowd cluster amount is : 40379763
+read crowd cluster use 0.31666666666666665 min!
+dixtinct count joins: 31712979
+transform crowd cluster use 0.85 min!
+
+
+person count: 40379763
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 47974051|13609491| 275862|0.005750233600243598| 0.3370374164900373|
+|   3| 60154600| 7404181|1249405|0.020769899558803484|0.18336365669110044|
+|   4|179829855| 9320696|2023200|0.011250634662414648|0.23082592139037567|
+|   2|123878665|13026271|1898433|0.015324939124909039| 0.3225940429615696|
+|  10|411837171|24218315|5446900|0.013225858138968228| 0.5997636736996202|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.6166666666666667 min!
+
+
+-----------currently calculate package 32 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200032
+0
+current posi: 34 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/6be76db89f374aeab66777b1022d7ce2
+crowd cluster amount is : 7404133
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 5700986
+transform crowd cluster use 0.8333333333333334 min!
+
+
+person count: 7404133
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 9369897|2586664| 80239|0.008563487944424577| 0.3493540702199704|
+|   3|10804539|1354093|235158|0.021764741651633633|0.18288339769153256|
+|   4|23679354|1378129|290094| 0.01225092542642844|0.18612969270000956|
+|   2|12328088|1569253|245344|0.019901220692130038|0.21194284327415513|
+|  10|56181878|4049837|850835| 0.01514429617322511| 0.5469697802565134|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.43333333333333335 min!
+
+
+-----------currently calculate package 33 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200033
+0
+current posi: 35 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191125/d26ff3b2e7ec4521a9e43f616988b382
+crowd cluster amount is : 22837453
+read crowd cluster use 0.18333333333333332 min!
+dixtinct count joins: 17828346
+transform crowd cluster use 0.8333333333333334 min!
+
+
+person count: 22837453
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 24745098| 7050889| 206124|0.008329892247749432| 0.3087423540619876|
+|   3| 33892591| 4049702| 751503|0.022173076115661973| 0.1773272177068082|
+|   4| 84852583| 4492857| 974363|0.011483009303323154|0.19673196481236327|
+|   2| 47603071| 5523087| 845804|0.017767845271999365|0.24184338770177216|
+|  10|191093343|12404943|2777794| 0.01453632008520569| 0.5431841720703268|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.4666666666666667 min!
+
+
+-----------currently calculate package 34 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200034
+0
+current posi: 36 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190819/a6428021a13d4643875335b0587f3d08
+crowd cluster amount is : 26543309
+read crowd cluster use 0.35 min!
+dixtinct count joins: 20802092
+transform crowd cluster use 0.8333333333333334 min!
+
+
+person count: 26543309
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 33943006| 9291839| 270604|0.007972305104621553| 0.3500633248100303|
+|   3| 39746270| 4928953| 847455|0.021321623387553095|0.18569474514274012|
+|   4| 96821486| 5425015|1117243|0.011539205254503117|0.20438352279288163|
+|   2| 52169978| 6345990| 941818|0.018052873244454884|0.23908059089392358|
+|  10|222680740|15042942|3177120|0.014267601230353375| 0.5667319775390476|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.5833333333333334 min!
+
+
+-----------currently calculate package 35 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200035
+0
+current posi: 37 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191024/a1ade429f58e42608cbb4d7553a9ed9e
+crowd cluster amount is : 35301570
+read crowd cluster use 0.23333333333333334 min!
+dixtinct count joins: 27346030
+transform crowd cluster use 0.6666666666666666 min!
+
+
+person count: 35301570
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 48631261|12469494| 428143|  0.0088038638356509|0.35322774596144024|
+|   3| 48565661| 6149571|1045591| 0.02152943002258324| 0.1742010624456646|
+|   4|114065456| 6956425|1492752| 0.01308680166938534|0.19705709972672603|
+|   2| 71268048| 8429046|1287898|0.018071183877521102|0.23877255317539703|
+|  10|282530426|19759322|4254384|0.015058144569533902| 0.5597292698313417|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7833333333333333 min!
+
+
+-----------currently calculate package 36 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200036
+0
+current posi: 38 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191125/d32e02c9615f443f9c76ae1096343a09
+crowd cluster amount is : 22837453
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 17828346
+transform crowd cluster use 0.75 min!
+
+
+person count: 22837453
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 24745098| 7050889| 206124|0.008329892247749432| 0.3087423540619876|
+|   3| 33892591| 4049702| 751503|0.022173076115661973| 0.1773272177068082|
+|   4| 84852583| 4492857| 974363|0.011483009303323154|0.19673196481236327|
+|   2| 47603071| 5523087| 845804|0.017767845271999365|0.24184338770177216|
+|  10|191093343|12404943|2777794| 0.01453632008520569| 0.5431841720703268|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.6833333333333333 min!
+
+
+-----------currently calculate package 37 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+Deleted hdfs://ss-teg-3-v2/user/tdw_siyuanzhang/intern/wangchen/newdir/2019041200037
+0
+current posi: 39 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200302/81e853bc12aa4804a3d22871279d5042
+crowd cluster amount is : 33923046
+read crowd cluster use 0.26666666666666666 min!
+dixtinct count joins: 25696151
+transform crowd cluster use 0.6166666666666667 min!
+
+
+person count: 33923046
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 32569454| 8499861| 352763|0.010831099594116623|0.25056302432275684|
+|   3| 43402069| 4778010|1087585|0.025058367609157067| 0.1408484957394451|
+|   4|159180420| 7282716|2002455|0.012579782111392846| 0.2146834337930621|
+|   2| 63186266| 7757030|1214797|0.019225649447302363| 0.2286654918900856|
+|  10|298338209|16917333|4657600|0.015611811895002695|0.49869734575132196|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.55 min!
+
+
+-----------currently calculate package 38 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 40 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200302/81e853bc12aa4804a3d22871279d5042
+crowd cluster amount is : 33923046
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 25696151
+transform crowd cluster use 0.7666666666666667 min!
+
+
+person count: 33923046
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 32569454| 8499861| 352763|0.010831099594116623|0.25056302432275684|
+|   3| 43402069| 4778010|1087585|0.025058367609157067| 0.1408484957394451|
+|   4|159180420| 7282716|2002455|0.012579782111392846| 0.2146834337930621|
+|   2| 63186266| 7757030|1214797|0.019225649447302363| 0.2286654918900856|
+|  10|298338209|16917333|4657600|0.015611811895002695|0.49869734575132196|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 1.9 min!
+
+
+-----------currently calculate package 39 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 41 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200302/81e853bc12aa4804a3d22871279d5042
+crowd cluster amount is : 33923046
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 25696151
+transform crowd cluster use 0.8666666666666667 min!
+
+
+person count: 33923046
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 32569454| 8499861| 352763|0.010831099594116623|0.25056302432275684|
+|   3| 43402069| 4778010|1087585|0.025058367609157067| 0.1408484957394451|
+|   4|159180420| 7282716|2002455|0.012579782111392846| 0.2146834337930621|
+|   2| 63186266| 7757030|1214797|0.019225649447302363| 0.2286654918900856|
+|  10|298338209|16917333|4657600|0.015611811895002695|0.49869734575132196|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 1.6 min!
+
+
+-----------currently calculate package 40 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 42 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200302/81e853bc12aa4804a3d22871279d5042
+crowd cluster amount is : 33923046
+read crowd cluster use 0.23333333333333334 min!
+dixtinct count joins: 25696151
+transform crowd cluster use 0.95 min!
+
+
+person count: 33923046
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 32569454| 8499861| 352763|0.010831099594116623|0.25056302432275684|
+|   3| 43402069| 4778010|1087585|0.025058367609157067| 0.1408484957394451|
+|   4|159180420| 7282716|2002455|0.012579782111392846| 0.2146834337930621|
+|   2| 63186266| 7757030|1214797|0.019225649447302363| 0.2286654918900856|
+|  10|298338209|16917333|4657600|0.015611811895002695|0.49869734575132196|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.85 min!
+
+
+-----------currently calculate package 41 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 43 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/32d4a5ce71c94f48ac9920b25ab187d5
+crowd cluster amount is : 147690706
+read crowd cluster use 0.1 min!
+dixtinct count joins: 97891766
+transform crowd cluster use 0.8833333333333333 min!
+
+
+person count: 147690706
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116560128|34130790|  890500|0.007639833751726834| 0.2310963968172784|
+|   3|173995519|19315969| 4086300|0.023485087567111426| 0.1307866251245356|
+|   4|341873190|21947351| 5092772|0.014896669727158189|0.14860346730281052|
+|   2|238385847|29836757| 4040195| 0.01694813283105687|0.20202189973958146|
+|  10|870814684|62724780|14109767|0.016202950247908313| 0.4247036370724641|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 1.1833333333333333 min!
+
+
+-----------currently calculate package 42 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 44 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/1d976bc009594d4fb482fa369185656a
+crowd cluster amount is : 4788739
+read crowd cluster use 0.03333333333333333 min!
+dixtinct count joins: 3650166
+transform crowd cluster use 1.0166666666666666 min!
+
+
+person count: 4788739
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 7263251|1740900|128733|0.017723881496040823|0.36354038088106283|
+|   3| 8569649| 739582|233448|0.027241255738712285|0.15444191049042347|
+|   4|16571535| 793563|219772|0.013262018274106774|0.16571439788219822|
+|   2| 8463604| 886024|214573|0.025352438512009776|0.18502240360144914|
+|  10|40868039|2562161|796526| 0.01949019379177944| 0.5350387649024095|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.6666666666666666 min!
+
+
+-----------currently calculate package 43 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 45 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200217/ea4195b2d6b84ea2b55ed546d6acb5b8
+crowd cluster amount is : 160816403
+read crowd cluster use 0.2 min!
+dixtinct count joins: 58801510
+transform crowd cluster use 1.0333333333333334 min!
+
+
+person count: 160816403
++----+---------+--------+-------+--------------------+--------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|            impratio|
++----+---------+--------+-------+--------------------+--------------------+
+|   1| 25389275| 7698941| 165224|0.006507629697972864|0.047874102743113836|
+|   3| 78139861| 8062100|1907633|0.024413058528476268| 0.05013232387743432|
+|   4|225939449|13945894|3496595|0.015475805643838672| 0.08671935038865407|
+|   2|219940519|24125628|3499059|0.015909114954848314|  0.1500196966847965|
+|  10|549409104|33845685|9068511| 0.01650593507456695| 0.21046164675129564|
++----+---------+--------+-------+--------------------+--------------------+
+
+write result finish, use: 0.6 min!
+
+
+-----------currently calculate package 44 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 46 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/3836e3c922284b739186e89795ed846d
+crowd cluster amount is : 5836888
+read crowd cluster use 0.05 min!
+dixtinct count joins: 4386057
+transform crowd cluster use 0.6833333333333333 min!
+
+
+person count: 5836888
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 9586328|2183360|166251|0.017342511126262318| 0.3740623428100728|
+|   3|10210239| 936936|262792| 0.02573808507322894|0.16051978383001353|
+|   4|18144865| 931513|245387|0.013523771050377062|0.15959069284865496|
+|   2|10708168|1032940|254193|0.023738234215227104|0.17696758957855624|
+|  10|48649600|3130149|928623|0.019087988390449253| 0.5362701837006295|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.35 min!
+
+
+-----------currently calculate package 45 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 47 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/41029e0d26b641318696bd13101347b2
+crowd cluster amount is : 1416956
+read crowd cluster use 0.05 min!
+dixtinct count joins: 990336
+transform crowd cluster use 0.8333333333333334 min!
+
+
+person count: 1416956
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 2074764|419586| 41247|0.019880333377675728|0.29611787521983746|
+|   3| 4906167|209204|128914|0.026275909482901826| 0.1476432578005245|
+|   4| 9097489|237494| 93393|0.010265799716822961|0.16760859193934038|
+|   2| 5156868|267101| 94945| 0.01841136907130452| 0.1885033833090089|
+|  10|21235288|685203|358499| 0.01688222924030981| 0.4835739430158735|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.38333333333333336 min!
+
+
+-----------currently calculate package 46 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 48 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190708/0bc5cfbc115e4956b0ee1006ddf76e64
+crowd cluster amount is : 20742651
+read crowd cluster use 0.2 min!
+dixtinct count joins: 15390211
+transform crowd cluster use 1.0 min!
+
+
+person count: 20742651
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 29897606| 7087579| 467978| 0.01565269138940422|0.34169108856915154|
+|   3| 27933842| 3030884| 709196|0.025388415957962387| 0.1461184493727441|
+|   4| 56846883| 3344088| 869114|0.015288683462204956|0.16121796582317274|
+|   2| 34484483| 3724032| 860765| 0.02496093677843452|0.17953500736236655|
+|  10|149162814|10637976|2907053| 0.01948912682754832|  0.512855179407878|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 2.4 min!
+
+
+-----------currently calculate package 47 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 49 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/d207a55444d74228b51e4a9b5fa95c97
+crowd cluster amount is : 2897855
+read crowd cluster use 0.03333333333333333 min!
+dixtinct count joins: 2151206
+transform crowd cluster use 0.7666666666666667 min!
+
+
+person count: 2897855
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 4371495|1005812| 77609|0.017753423028048755| 0.3470884499051885|
+|   3| 5082259| 421031|131865| 0.02594613930537582|0.14529056836867268|
+|   4| 9379226| 466570|128310|0.013680233315627536|0.16100529529600344|
+|   2| 6071699| 517389|135579|0.022329664234014234|0.17854205955784538|
+|  10|24904679|1494526|473363|0.019006990614093038| 0.5157352593556268|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.36666666666666664 min!
+
+
+-----------currently calculate package 48 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 50 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/41029e0d26b641318696bd13101347b2
+crowd cluster amount is : 1416956
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 990336
+transform crowd cluster use 0.8833333333333333 min!
+
+
+person count: 1416956
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 2074764|419586| 41247|0.019880333377675728|0.29611787521983746|
+|   3| 4906167|209204|128914|0.026275909482901826| 0.1476432578005245|
+|   4| 9097489|237494| 93393|0.010265799716822961|0.16760859193934038|
+|   2| 5156868|267101| 94945| 0.01841136907130452| 0.1885033833090089|
+|  10|21235288|685203|358499| 0.01688222924030981| 0.4835739430158735|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.4666666666666667 min!
+
+
+-----------currently calculate package 49 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 51 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190708/0bc5cfbc115e4956b0ee1006ddf76e64
+crowd cluster amount is : 20742651
+read crowd cluster use 0.18333333333333332 min!
+dixtinct count joins: 15390211
+transform crowd cluster use 1.2166666666666666 min!
+
+
+person count: 20742651
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 29897606| 7087579| 467978| 0.01565269138940422|0.34169108856915154|
+|   3| 27933842| 3030884| 709196|0.025388415957962387| 0.1461184493727441|
+|   4| 56846883| 3344088| 869114|0.015288683462204956|0.16121796582317274|
+|   2| 34484483| 3724032| 860765| 0.02496093677843452|0.17953500736236655|
+|  10|149162814|10637976|2907053| 0.01948912682754832|  0.512855179407878|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.5833333333333334 min!
+
+
+-----------currently calculate package 50 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 52 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/41029e0d26b641318696bd13101347b2
+crowd cluster amount is : 1416956
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 990336
+transform crowd cluster use 0.7333333333333333 min!
+
+
+person count: 1416956
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 2074764|419586| 41247|0.019880333377675728|0.29611787521983746|
+|   3| 4906167|209204|128914|0.026275909482901826| 0.1476432578005245|
+|   4| 9097489|237494| 93393|0.010265799716822961|0.16760859193934038|
+|   2| 5156868|267101| 94945| 0.01841136907130452| 0.1885033833090089|
+|  10|21235288|685203|358499| 0.01688222924030981| 0.4835739430158735|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.26666666666666666 min!
+
+
+-----------currently calculate package 51 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 53 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/d207a55444d74228b51e4a9b5fa95c97
+crowd cluster amount is : 2897855
+read crowd cluster use 0.05 min!
+dixtinct count joins: 2151206
+transform crowd cluster use 0.6166666666666667 min!
+
+
+person count: 2897855
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 4371495|1005812| 77609|0.017753423028048755| 0.3470884499051885|
+|   3| 5082259| 421031|131865| 0.02594613930537582|0.14529056836867268|
+|   4| 9379226| 466570|128310|0.013680233315627536|0.16100529529600344|
+|   2| 6071699| 517389|135579|0.022329664234014234|0.17854205955784538|
+|  10|24904679|1494526|473363|0.019006990614093038| 0.5157352593556268|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.5333333333333333 min!
+
+
+-----------currently calculate package 52 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 54 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/d207a55444d74228b51e4a9b5fa95c97
+crowd cluster amount is : 2897855
+read crowd cluster use 0.03333333333333333 min!
+dixtinct count joins: 2151206
+transform crowd cluster use 0.8333333333333334 min!
+
+
+person count: 2897855
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 4371495|1005812| 77609|0.017753423028048755| 0.3470884499051885|
+|   3| 5082259| 421031|131865| 0.02594613930537582|0.14529056836867268|
+|   4| 9379226| 466570|128310|0.013680233315627536|0.16100529529600344|
+|   2| 6071699| 517389|135579|0.022329664234014234|0.17854205955784538|
+|  10|24904679|1494526|473363|0.019006990614093038| 0.5157352593556268|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.38333333333333336 min!
+
+
+-----------currently calculate package 53 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 55 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191028/5eacb6f7eea04ee792e9822afab3f200
+crowd cluster amount is : 29525000
+read crowd cluster use 0.18333333333333332 min!
+dixtinct count joins: 22676462
+transform crowd cluster use 0.7833333333333333 min!
+
+
+person count: 29525000
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 25890696| 7882575| 151943|0.005868633272740138| 0.2669796782387807|
+|   3| 46234675| 5146385|1028135| 0.02223731431009302| 0.1743060118543607|
+|   4| 95140111| 5679138|1350752|0.014197502880777594|0.19235014394580863|
+|   2| 82458088| 8829146|1233773|0.014962425517312505| 0.2990396613039797|
+|  10|249723570|15771338|3764603| 0.01507508081836248| 0.5341689415749364|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.6166666666666667 min!
+
+
+-----------currently calculate package 54 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 56 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200302/81e853bc12aa4804a3d22871279d5042
+crowd cluster amount is : 33923046
+read crowd cluster use 0.15 min!
+dixtinct count joins: 25696151
+transform crowd cluster use 1.1833333333333333 min!
+
+
+person count: 33923046
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 32569454| 8499861| 352763|0.010831099594116623|0.25056302432275684|
+|   3| 43402069| 4778010|1087585|0.025058367609157067| 0.1408484957394451|
+|   4|159180420| 7282716|2002455|0.012579782111392846| 0.2146834337930621|
+|   2| 63186266| 7757030|1214797|0.019225649447302363| 0.2286654918900856|
+|  10|298338209|16917333|4657600|0.015611811895002695|0.49869734575132196|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.5666666666666667 min!
+
+
+-----------currently calculate package 55 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 57 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191114/58d4f867734549f7beb33b7702d31189
+crowd cluster amount is : 82498
+read crowd cluster use 0.0 min!
+dixtinct count joins: 56136
+transform crowd cluster use 0.6666666666666666 min!
+
+
+person count: 82498
++----+------+-----+-----+--------------------+-------------------+
+|site| imppv|impuv|clkpv|                 ctr|           impratio|
++----+------+-----+-----+--------------------+-------------------+
+|   1|166443|25808| 6467|0.038854142258911456|0.31283182622609035|
+|   3| 90440|10570| 4554|0.050353825740822644|0.12812431816528885|
+|   4|280600|12431| 5059|0.018029223093371346| 0.1506824407864433|
+|   2|164758|13971| 7040| 0.04272933635999466|0.16934955998933307|
+|  10|702241|38801|23120| 0.03292317025066893|0.47032655337099083|
++----+------+-----+-----+--------------------+-------------------+
+
+write result finish, use: 0.4666666666666667 min!
+
+
+-----------currently calculate package 56 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 58 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/32d4a5ce71c94f48ac9920b25ab187d5
+crowd cluster amount is : 147690706
+read crowd cluster use 0.13333333333333333 min!
+dixtinct count joins: 97891766
+transform crowd cluster use 0.9333333333333333 min!
+
+
+person count: 147690706
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116560128|34130790|  890500|0.007639833751726834| 0.2310963968172784|
+|   3|173995519|19315969| 4086300|0.023485087567111426| 0.1307866251245356|
+|   4|341873190|21947351| 5092772|0.014896669727158189|0.14860346730281052|
+|   2|238385847|29836757| 4040195| 0.01694813283105687|0.20202189973958146|
+|  10|870814684|62724780|14109767|0.016202950247908313| 0.4247036370724641|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 1.5333333333333334 min!
+
+
+-----------currently calculate package 57 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 59 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/b92ee0ebb7394bf18a9885f7589b9462
+crowd cluster amount is : 865838
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 594645
+transform crowd cluster use 1.1833333333333333 min!
+
+
+person count: 865838
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 7237268|283702|115293|  0.0159304588416513|   0.32766175658726|
+|   3| 1017241|110302| 26312|0.025866043543270472| 0.1273933460993858|
+|   4| 5553193|179316| 62093|0.011181495042581808|0.20710109743393107|
+|   2| 1419297|156394| 24240|0.017078877782451454|0.18062732289412106|
+|  10|15226999|427955|227938|0.014969331777062571| 0.4942668258958373|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.5666666666666667 min!
+
+
+-----------currently calculate package 58 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 60 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191129/f74214b677ae4b149e441cf3522dad79
+crowd cluster amount is : 20056532
+read crowd cluster use 0.3 min!
+dixtinct count joins: 14058893
+transform crowd cluster use 1.0333333333333334 min!
+
+
+person count: 20056532
++----+---------+-------+-------+--------------------+-------------------+
+|site|    imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+---------+-------+-------+--------------------+-------------------+
+|   1| 17843037|5165368| 154386|0.008652450813165943| 0.2575404362030285|
+|   3| 23038867|2592516| 513060| 0.02226932426841997|0.12926043246160404|
+|   4| 47821771|3085535| 666777|0.013942959159751737|0.15384190048409166|
+|   2| 27955255|3482429| 481133|0.017210824941500266|0.17363066556072604|
+|  10|116658930|8862150|1815356|0.015561226217315725|0.44185854264336427|
++----+---------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.9333333333333333 min!
+
+
+-----------currently calculate package 59 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 61 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200211/e2455e8453a64f418943f05b73f47e2d
+crowd cluster amount is : 9974754
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 7642188
+transform crowd cluster use 1.0333333333333334 min!
+
+
+person count: 9974754
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|13062191|3268524| 209549| 0.01604240819935951|0.32767966006981225|
+|   3|10261018|1414990| 261885|0.025522321469468236| 0.1418571325167518|
+|   4|20017005|1563080| 338995|0.016935350718051977|0.15670361394376242|
+|   2|10915939|1548842| 279372|0.025593034186064983|0.15527621032057531|
+|  10|54256153|5024065|1089801|0.020086219529792317| 0.5036780856951459|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 1.0166666666666666 min!
+
+
+-----------currently calculate package 60 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 62 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191030/235a3ea3f52d4a30a03825731473a998
+crowd cluster amount is : 8532835
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 5970511
+transform crowd cluster use 0.9666666666666667 min!
+
+
+person count: 8532835
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1|13616657|2468127|181612|0.013337488048645126|0.28925052459118217|
+|   3| 7832413| 960394|199830|0.025513210296750185|0.11255274477943146|
+|   4|18867562|1383586|331624| 0.01757640971313623| 0.1621484535913328|
+|   2|12768680|1585781|255684|0.020024309482264416| 0.1858445639696537|
+|  10|53085312|3880349|968750|0.018248927311569723| 0.4547549554163417|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.48333333333333334 min!
+
+
+-----------currently calculate package 61 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 63 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/temp/20191123/b1c1b17c9d3e4c4caee58a061c12eb07
+current posi: 64 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/temp/20191129/848e574a95204da697aa9d2ff1b73a06
+current posi: 65 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200103/88fb7e76e806483f939883788016ab85
+crowd cluster amount is : 1300248
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 1012913
+transform crowd cluster use 0.9833333333333333 min!
+
+
+person count: 1300248
++----+-------+------+------+--------------------+-------------------+
+|site|  imppv| impuv| clkpv|                 ctr|           impratio|
++----+-------+------+------+--------------------+-------------------+
+|   1|1963316|459692| 32142|0.016371282055461272|0.35354178587469465|
+|   3|1522663|189797| 40126|0.026352515297212845| 0.1459698457525026|
+|   4|3623077|239168| 61468|  0.0169656896610257| 0.1839402944669017|
+|   2|1561636|230713| 41419|0.026522826061899187| 0.1774376888101347|
+|  10|8670692|688116|175155|0.020200809808490486| 0.5292190412905846|
++----+-------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.6833333333333333 min!
+
+
+-----------currently calculate package 62 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 66 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200213/81976c32505946efbfa099972abf2f14
+crowd cluster amount is : 49999992
+read crowd cluster use 0.35 min!
+dixtinct count joins: 31555847
+transform crowd cluster use 0.9 min!
+
+
+person count: 49999992
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 55713392|11980046| 750405|0.013469023749263015|0.23960095833615333|
+|   3| 48367382| 5479263|1235771|0.025549677259769817| 0.1095852775336444|
+|   4|140269219| 8187141|2261312|0.016121227565970835| 0.1637428461988554|
+|   2| 62841722| 7795493|1350840|0.021495909994318742|0.15590988494558158|
+|  10|307191715|20091901|5598328|0.018224215454508596| 0.4018380842940935|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.7666666666666667 min!
+
+
+-----------currently calculate package 63 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 67 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191114/58d4f867734549f7beb33b7702d31189
+crowd cluster amount is : 82498
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 56136
+transform crowd cluster use 0.21666666666666667 min!
+
+
+person count: 82498
++----+------+-----+-----+--------------------+-------------------+
+|site| imppv|impuv|clkpv|                 ctr|           impratio|
++----+------+-----+-----+--------------------+-------------------+
+|   1|166443|25808| 6467|0.038854142258911456|0.31283182622609035|
+|   3| 90440|10570| 4554|0.050353825740822644|0.12812431816528885|
+|   4|280600|12431| 5059|0.018029223093371346| 0.1506824407864433|
+|   2|164758|13971| 7040| 0.04272933635999466|0.16934955998933307|
+|  10|702241|38801|23120| 0.03292317025066893|0.47032655337099083|
++----+------+-----+-----+--------------------+-------------------+
+
+write result finish, use: 0.36666666666666664 min!
+
+
+-----------currently calculate package 64 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 68 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191226/5198117ddf034e648ecd91c578e25e63
+crowd cluster amount is : 665051
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 516087
+transform crowd cluster use 1.0833333333333333 min!
+
+
+person count: 665051
++----+-------+------+-----+--------------------+-------------------+
+|site|  imppv| impuv|clkpv|                 ctr|           impratio|
++----+-------+------+-----+--------------------+-------------------+
+|   1|1108309|258612| 7662|0.006913234486050371|  0.388860403187124|
+|   3| 946931|119068|17796|0.018793343971208038|0.17903589348786786|
+|   4|2302920|147239|29691|0.012892762232296389| 0.2213950509058704|
+|   2|1759865|202339|25531|0.014507362780667835| 0.3042458397927377|
+|  10|6118025|401049|80680|0.013187262229232473|  0.603034955213961|
++----+-------+------+-----+--------------------+-------------------+
+
+write result finish, use: 1.3 min!
+
+
+-----------currently calculate package 65 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 69 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200310/15ef9d3e51cd412a80fd306fdeb42f7c
+crowd cluster amount is : 3805334
+read crowd cluster use 0.03333333333333333 min!
+dixtinct count joins: 2873564
+transform crowd cluster use 1.2166666666666666 min!
+
+
+person count: 3805334
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 2826109| 804153| 22788| 0.00806338325945673|0.21132258035694107|
+|   3| 5352708| 571162|127691|0.023855401789150462|0.15009510334703866|
+|   4|14421326| 815634|195419|0.013550695684987636|0.21433966111778888|
+|   2|12030420|1191469|195243| 0.01622910920815732|0.31310497317712455|
+|  10|34630563|1968970|541141|0.015626110381168217| 0.5174237005214259|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.9666666666666667 min!
+
+
+-----------currently calculate package 66 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 70 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200427/9c05cb4a9e6e4a668c69acf45534e645
+crowd cluster amount is : 6396666
+read crowd cluster use 0.05 min!
+dixtinct count joins: 4736901
+transform crowd cluster use 0.7833333333333333 min!
+
+
+person count: 6396666
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 5664549|1605952| 50757|0.008960466225996102| 0.2510607869787167|
+|   3| 9936245|1050285|242977| 0.02445360395199595|0.16419256531449353|
+|   4|23175204|1264235|307519|0.013269311458919629| 0.1976396766690648|
+|   2|16030265|1676273|274944|0.017151556758419152| 0.2620541700942335|
+|  10|54806263|3218782|876197|0.015987169203636454| 0.5031968215942493|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.4166666666666667 min!
+
+
+-----------currently calculate package 67 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 71 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200429/3a0b963a82b643de908de69175d7300b
+crowd cluster amount is : 8460175
+read crowd cluster use 0.15 min!
+dixtinct count joins: 6366601
+transform crowd cluster use 0.6833333333333333 min!
+
+
+person count: 8460175
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1| 8102181|2228985|  53328|0.006581931457714904|0.26346795426808545|
+|   3|15200674|1684292| 315973|0.020786775639027585| 0.1990847707050977|
+|   4|36993358|1765291| 413846| 0.01118703525103074| 0.2086589225400184|
+|   2|34677750|2577678| 473211|0.013645954538573004| 0.3046837683617656|
+|  10|94973963|4641885|1256358| 0.01322844662173358| 0.5486748205563123|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.38333333333333336 min!
+
+
+-----------currently calculate package 68 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 72 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/temp/20191122/10934b40b65348bf8133ab68a8dfa252
+current posi: 73 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200220/eb241802344646cb9bcef93e84dc9cd2
+crowd cluster amount is : 11036790
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 8681482
+transform crowd cluster use 0.8333333333333334 min!
+
+
+person count: 11036790
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|17375647|4381510| 106247|0.006114707555925831|0.39699133534297565|
+|   3|15446336|1948105| 296828|  0.0192167255716825|0.17651010846450824|
+|   4|34479985|2414943| 471952|0.013687708970871073| 0.2188084578940072|
+|   2|27250919|3268897| 411498|0.015100334781370125| 0.2961818608490331|
+|  10|94552887|6701668|1286525|0.013606406327921008| 0.6072116983289525|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.8333333333333334 min!
+
+
+-----------currently calculate package 69 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 74 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/7410479242ea4e999960602e72231be2
+crowd cluster amount is : 14005966
+read crowd cluster use 0.21666666666666667 min!
+dixtinct count joins: 10677454
+transform crowd cluster use 0.7333333333333333 min!
+
+
+person count: 14005966
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|15503778|3494825| 236558| 0.01525808741585438|0.24952402426223225|
+|   3|13656959|1631935| 363348|0.026605337249676154|0.11651713277042083|
+|   4|29416027|2184406| 557419|0.018949499876376914| 0.1559625376785864|
+|   2|17360522|2414166| 453322|0.026112233261188805| 0.1723669756159625|
+|  10|75937286|6239517|1610647|0.021210226027830386|0.44548994335699516|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.45 min!
+
+
+-----------currently calculate package 70 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 75 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190902/6edc32289e6841788958413096cf006c
+crowd cluster amount is : 1207498
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 873891
+transform crowd cluster use 1.0666666666666667 min!
+
+
+person count: 1207498
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 1967130|407205| 28433| 0.01445405235037847|  0.337230372224219|
+|   3| 4680047|183079|120548| 0.02575786097874658|0.15161847058959932|
+|   4| 8331032|199721| 77005|0.009243152589018984|0.16540068803426589|
+|   2| 4947493|236365| 79188|0.016005682069686607|0.19574773622813454|
+|  10|19925702|617750|305174| 0.01531559590723579| 0.5115950502609529|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.3333333333333333 min!
+
+
+-----------currently calculate package 71 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 76 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190613/aa9f8aa633af41199a25553dc7d518f4
+crowd cluster amount is : 20742651
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 15390211
+transform crowd cluster use 1.05 min!
+
+
+person count: 20742651
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 29897606| 7087579| 467978| 0.01565269138940422|0.34169108856915154|
+|   3| 27933842| 3030884| 709196|0.025388415957962387| 0.1461184493727441|
+|   4| 56846883| 3344088| 869114|0.015288683462204956|0.16121796582317274|
+|   2| 34484483| 3724032| 860765| 0.02496093677843452|0.17953500736236655|
+|  10|149162814|10637976|2907053| 0.01948912682754832|  0.512855179407878|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.8166666666666667 min!
+
+
+-----------currently calculate package 72 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 77 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190613/aa9f8aa633af41199a25553dc7d518f4
+crowd cluster amount is : 20742651
+read crowd cluster use 0.18333333333333332 min!
+dixtinct count joins: 15390211
+transform crowd cluster use 1.25 min!
+
+
+person count: 20742651
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 29897606| 7087579| 467978| 0.01565269138940422|0.34169108856915154|
+|   3| 27933842| 3030884| 709196|0.025388415957962387| 0.1461184493727441|
+|   4| 56846883| 3344088| 869114|0.015288683462204956|0.16121796582317274|
+|   2| 34484483| 3724032| 860765| 0.02496093677843452|0.17953500736236655|
+|  10|149162814|10637976|2907053| 0.01948912682754832|  0.512855179407878|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.8833333333333333 min!
+
+
+-----------currently calculate package 73 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 78 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190613/aa9f8aa633af41199a25553dc7d518f4
+crowd cluster amount is : 20742651
+read crowd cluster use 0.2833333333333333 min!
+dixtinct count joins: 15390211
+transform crowd cluster use 1.4 min!
+
+
+person count: 20742651
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 29897606| 7087579| 467978| 0.01565269138940422|0.34169108856915154|
+|   3| 27933842| 3030884| 709196|0.025388415957962387| 0.1461184493727441|
+|   4| 56846883| 3344088| 869114|0.015288683462204956|0.16121796582317274|
+|   2| 34484483| 3724032| 860765| 0.02496093677843452|0.17953500736236655|
+|  10|149162814|10637976|2907053| 0.01948912682754832|  0.512855179407878|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.95 min!
+
+
+-----------currently calculate package 74 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 79 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190809/c190e1c86d8b419e9ce28ca676448405
+crowd cluster amount is : 47317513
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 29632577
+transform crowd cluster use 1.1666666666666667 min!
+
+
+person count: 47317513
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 49769117|12676280| 503170| 0.01011008493480003| 0.2678982726754891|
+|   3| 43133150| 5074679| 985675| 0.02285191320364963|0.10724737371552051|
+|   4| 95346446| 6417400|1469068|0.015407684938775798|0.13562420324162008|
+|   2| 59944862| 7384162|1221846|0.020382831142392154|0.15605558136582537|
+|  10|248193575|19591555|4179759|0.016840722004991468| 0.4140444786267613|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.8666666666666667 min!
+
+
+-----------currently calculate package 75 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 80 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190624/83b4850a8a3449bcb983df0df1bbdfc8
+crowd cluster amount is : 689777
+read crowd cluster use 0.03333333333333333 min!
+dixtinct count joins: 585186
+transform crowd cluster use 0.7 min!
+
+
+person count: 689777
++----+-------+------+-----+--------------------+-------------------+
+|site|  imppv| impuv|clkpv|                 ctr|           impratio|
++----+-------+------+-----+--------------------+-------------------+
+|   1|1165123|265399| 8073|0.006928882186687...| 0.3847605820431821|
+|   3|1169368|138193|19509|0.016683370846474335|0.20034445915129093|
+|   4|1958909|152049|24927|0.012724940260114176|0.22043211066765056|
+|   2|1425118|172303|21032|0.014758076173341435|0.24979522367373802|
+|  10|5718518|435591|73541|0.012860150129806359| 0.6314953963382368|
++----+-------+------+-----+--------------------+-------------------+
+
+write result finish, use: 0.8666666666666667 min!
+
+
+-----------currently calculate package 76 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 81 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190809/64ea4a1d025e4e108e13375ac5a709ed
+crowd cluster amount is : 1387221
+read crowd cluster use 0.03333333333333333 min!
+dixtinct count joins: 953382
+transform crowd cluster use 1.3333333333333333 min!
+
+
+person count: 1387221
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1|10924213|457844|168399| 0.01541520656911395| 0.3300440232666605|
+|   3| 1582059|175940| 39446| 0.02493333055214755| 0.1268291065374587|
+|   4| 8553527|285126| 96691|0.011304225730508596| 0.2055375459281542|
+|   2| 2228227|249146| 37618|0.016882481003955164|0.17960079900751214|
+|  10|23288026|686547|342154|0.014692271470325565|0.49490816531756654|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.7 min!
+
+
+-----------currently calculate package 77 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 82 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190828/23da6ea5b85b4f70a26c9f846e7e7529
+crowd cluster amount is : 8636975
+read crowd cluster use 0.15 min!
+dixtinct count joins: 5974011
+transform crowd cluster use 0.8 min!
+
+
+person count: 8636975
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|39744259|2928077| 512559|0.012896428638913611| 0.3390164959375244|
+|   3|10398628|1201044| 247462| 0.02379756252459459|0.13905840876001146|
+|   4|29836410|1519024| 388645|0.013025863366269602|0.17587453940760508|
+|   2|13499646|1579961| 233302|0.017282082804245386|0.18292990312001597|
+|  10|93478943|4249545|1381968|0.014783735840915531| 0.4920177492698543|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.2833333333333333 min!
+
+
+-----------currently calculate package 78 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 83 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191105/693d9514844346b39d82da45f9860cf5
+crowd cluster amount is : 36354251
+read crowd cluster use 0.08333333333333333 min!
+dixtinct count joins: 7709834
+transform crowd cluster use 1.1 min!
+
+
+person count: 36354251
++----+--------+-------+------+--------------------+--------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|            impratio|
++----+--------+-------+------+--------------------+--------------------+
+|   1| 4225879|1184451| 32759| 0.00775199668518668| 0.03258081152600283|
+|   3| 8052373| 847474|186467|0.023156776269554327| 0.02331155165320281|
+|   4|18922222|1215930|281888|0.014897193363443258|0.033446707511591976|
+|   2|12090240|1450356|199382|0.016491153194642953|0.039895086822171084|
+|  10|43290714|2973370|700496|0.016181206898089044| 0.08178878448080254|
++----+--------+-------+------+--------------------+--------------------+
+
+write result finish, use: 1.4833333333333334 min!
+
+
+-----------currently calculate package 79 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 84 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191105/7803d5e4a7b044eab5a2c71046b58156
+crowd cluster amount is : 48495925
+read crowd cluster use 0.1 min!
+dixtinct count joins: 12857087
+transform crowd cluster use 1.4333333333333333 min!
+
+
+person count: 48495925
++----+--------+-------+-------+--------------------+--------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|            impratio|
++----+--------+-------+-------+--------------------+--------------------+
+|   1| 6028819|1760846|  45885|0.007610943370500923| 0.03630915381034592|
+|   3|12508903|1323178| 281245|0.022483586290500453|0.027284313063417186|
+|   4|28706702|1900361| 419156| 0.01460132898582359|  0.0391859934623373|
+|   2|17363237|2129983| 284607|0.016391356058780976| 0.04392086551602016|
+|  10|64607661|4649380|1030893|0.015956203707792486| 0.09587156034244114|
++----+--------+-------+-------+--------------------+--------------------+
+
+write result finish, use: 0.6333333333333333 min!
+
+
+-----------currently calculate package 80 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 85 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/temp/20191119/3f3e9846a12448f8b5cc564afe7d0647
+current posi: 86 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190902/c28255085160460eba34c56243b579de
+crowd cluster amount is : 12020000
+read crowd cluster use 0.15 min!
+dixtinct count joins: 8234543
+transform crowd cluster use 0.8166666666666667 min!
+
+
+person count: 12020000
++----+---------+-------+-------+--------------------+-------------------+
+|site|    imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+---------+-------+-------+--------------------+-------------------+
+|   1| 17145041|3563959| 267424|0.015597746310434603| 0.2965024126455907|
+|   3| 22745479|1900820| 579704|0.025486559328998962|0.15813810316139768|
+|   4| 49353236|2114213| 647776|0.013125299423121921|0.17589126455906823|
+|   2| 27891039|2344204| 546671|0.019600237911538542|0.19502529118136439|
+|  10|117134795|5822788|2041575|0.017429278806523715|0.48442495840266225|
++----+---------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.38333333333333336 min!
+
+
+-----------currently calculate package 81 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 87 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191226/6e08af34b878459daa2df83fa7bb4103
+crowd cluster amount is : 11036790
+read crowd cluster use 0.08333333333333333 min!
+dixtinct count joins: 8681482
+transform crowd cluster use 1.9666666666666666 min!
+
+
+person count: 11036790
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|17375647|4381510| 106247|0.006114707555925831|0.39699133534297565|
+|   3|15446336|1948105| 296828|  0.0192167255716825|0.17651010846450824|
+|   4|34479985|2414943| 471952|0.013687708970871073| 0.2188084578940072|
+|   2|27250919|3268897| 411498|0.015100334781370125| 0.2961818608490331|
+|  10|94552887|6701668|1286525|0.013606406327921008| 0.6072116983289525|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.8833333333333333 min!
+
+
+-----------currently calculate package 82 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 88 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200302/81e853bc12aa4804a3d22871279d5042
+crowd cluster amount is : 33923046
+read crowd cluster use 0.16666666666666666 min!
+dixtinct count joins: 25696151
+transform crowd cluster use 0.6333333333333333 min!
+
+
+person count: 33923046
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 32569454| 8499861| 352763|0.010831099594116623|0.25056302432275684|
+|   3| 43402069| 4778010|1087585|0.025058367609157067| 0.1408484957394451|
+|   4|159180420| 7282716|2002455|0.012579782111392846| 0.2146834337930621|
+|   2| 63186266| 7757030|1214797|0.019225649447302363| 0.2286654918900856|
+|  10|298338209|16917333|4657600|0.015611811895002695|0.49869734575132196|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.55 min!
+
+
+-----------currently calculate package 83 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 89 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200204/1582732dce3544aa8f3d685d1da9ea4f
+crowd cluster amount is : 7520382
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 6102569
+transform crowd cluster use 0.6 min!
+
+
+person count: 7520382
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1|10297367|2672925| 81818|0.007945526268996726| 0.3554240994672877|
+|   3|10949340|1351831|183835|0.016789596450562317|0.17975562943478138|
+|   4|19080449|1583473|261937|0.013728031242870647| 0.2105575222109728|
+|   2|12689593|1745026|206104|0.016241970881177986|0.23203954267216745|
+|  10|53016749|4427726|733694|0.013838909662303134| 0.5887634431336067|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.4666666666666667 min!
+
+
+-----------currently calculate package 84 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 90 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200218/efe9a57fd2cf46cda62a998dd8f4cbf6
+crowd cluster amount is : 13000000
+read crowd cluster use 0.08333333333333333 min!
+dixtinct count joins: 10820573
+transform crowd cluster use 1.0333333333333334 min!
+
+
+person count: 13000000
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|20889750|5452175| 298830|0.014305101784367932| 0.4193980769230769|
+|   3|23713391|2828970| 568120|0.023957771370615024|0.21761307692307694|
+|   4|36309147|2764261| 554861| 0.01528157629260748|0.21263546153846155|
+|   2|16906904|2588168| 392134| 0.02319372015124709|0.19908984615384615|
+|  10|97819192|8074292|1813945| 0.01854385589281907| 0.6210993846153846|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.9833333333333333 min!
+
+
+-----------currently calculate package 85 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 91 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200305/c267989299744a61bb5ff1a9a006ab08
+crowd cluster amount is : 6050427
+read crowd cluster use 0.13333333333333333 min!
+dixtinct count joins: 5114674
+transform crowd cluster use 0.85 min!
+
+
+person count: 6050427
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 9710359|2863910| 82827|0.008529756726811027| 0.4733401460756406|
+|   3|12061496|1419505|278903| 0.02312341686304916|   0.23461236702798|
+|   4|17907291|1269307|230372|0.012864704102926568|0.20978800339215728|
+|   2|10637867|1405102|183284|0.017229393824908696|0.23223187388262018|
+|  10|50317013|3992528|775386|0.015410016488856364| 0.6598754104462379|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.4166666666666667 min!
+
+
+-----------currently calculate package 86 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 92 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191109/c11b7ef352df44e894313e7aca791ed4
+crowd cluster amount is : 972416
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 758645
+transform crowd cluster use 0.6333333333333333 min!
+
+
+person count: 972416
++----+-------+------+------+--------------------+-------------------+
+|site|  imppv| impuv| clkpv|                 ctr|           impratio|
++----+-------+------+------+--------------------+-------------------+
+|   1|1345245|371172| 11210|0.008333054573702188|  0.381700835856259|
+|   3|1410935|185948| 29173| 0.02067636000240975|0.19122268658681058|
+|   4|2823871|182373| 34648| 0.01226968229072787|0.18754627649072003|
+|   2|1376180|194076| 30529|0.022183871295906057|0.19958124917730682|
+|  10|6956231|548584|105560|0.015174884215317173| 0.5641453863367119|
++----+-------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.2833333333333333 min!
+
+
+-----------currently calculate package 87 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 93 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200305/0b8bb9907a6a476899a82f393991471e
+crowd cluster amount is : 21310591
+read crowd cluster use 0.21666666666666667 min!
+dixtinct count joins: 12708538
+transform crowd cluster use 0.6833333333333333 min!
+
+
+person count: 21310591
++----+---------+-------+-------+--------------------+-------------------+
+|site|    imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+---------+-------+-------+--------------------+-------------------+
+|   1| 10483587|2498868|  79646|0.007597208856090...| 0.1172594415612406|
+|   3| 18311884|1927073| 446162|0.024364614804244063|0.09042794730563784|
+|   4| 42215465|2554824| 628372| 0.01488487690470779|0.11988517821959982|
+|   2| 29115313|3248315| 487607|0.016747441458039622| 0.1524272602294324|
+|  10|100126249|6759178|1641787|0.016397168738439407| 0.3171745917323457|
++----+---------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.31666666666666665 min!
+
+
+-----------currently calculate package 88 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 94 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200604/7ae1691e95cb45208b57b2647a06b32d
+crowd cluster amount is : 39999998
+read crowd cluster use 0.13333333333333333 min!
+dixtinct count joins: 35514699
+transform crowd cluster use 0.6666666666666666 min!
+
+
+person count: 39999998
++----+---------+--------+-------+--------------------+------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|          impratio|
++----+---------+--------+-------+--------------------+------------------+
+|   1| 91943272|22105358| 378343|0.004114961233922...|0.5526339776316989|
+|   3| 56888414| 8125026| 839287|0.014753214951641998| 0.203125660156283|
+|   4|107894242|10148941|1440033|  0.0133467085296359|0.2537235376861769|
+|   2|107778584|13725793|1524500|0.014144739552340009|0.3431448421572421|
+|  10|364504512|30036744|4182163|0.011473556190163155|0.7509186375459319|
++----+---------+--------+-------+--------------------+------------------+
+
+write result finish, use: 0.5 min!
+
+
+-----------currently calculate package 89 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 95 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200327/3775d6eb91fd44cdb2b88e28348bbfe5
+crowd cluster amount is : 30000000
+read crowd cluster use 0.18333333333333332 min!
+dixtinct count joins: 25875346
+transform crowd cluster use 0.5333333333333333 min!
+
+
+person count: 30000000
++----+---------+--------+-------+--------------------+-------------------+
+|site|    imppv|   impuv|  clkpv|                 ctr|           impratio|
++----+---------+--------+-------+--------------------+-------------------+
+|   1| 53945280|15761940| 387769|0.007188191441401361|           0.525398|
+|   3| 50657541| 6976335| 822275|0.016232035423906582|          0.2325445|
+|   4| 75703573| 6845057|1026482|0.013559227911211008|0.22816856666666666|
+|   2| 49910136| 7984702|1184294|0.023728526806659073|0.26615673333333334|
+|  10|230216530|21315188|3420820|0.014859141522113985| 0.7105062666666667|
++----+---------+--------+-------+--------------------+-------------------+
+
+write result finish, use: 0.4666666666666667 min!
+
+
+-----------currently calculate package 90 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 96 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191109/c11b7ef352df44e894313e7aca791ed4
+crowd cluster amount is : 972416
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 758645
+transform crowd cluster use 0.85 min!
+
+
+person count: 972416
++----+-------+------+------+--------------------+-------------------+
+|site|  imppv| impuv| clkpv|                 ctr|           impratio|
++----+-------+------+------+--------------------+-------------------+
+|   1|1345245|371172| 11210|0.008333054573702188|  0.381700835856259|
+|   3|1410935|185948| 29173| 0.02067636000240975|0.19122268658681058|
+|   4|2823871|182373| 34648| 0.01226968229072787|0.18754627649072003|
+|   2|1376180|194076| 30529|0.022183871295906057|0.19958124917730682|
+|  10|6956231|548584|105560|0.015174884215317173| 0.5641453863367119|
++----+-------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.4166666666666667 min!
+
+
+-----------currently calculate package 91 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 97 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190902/6edc32289e6841788958413096cf006c
+crowd cluster amount is : 1207498
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 873891
+transform crowd cluster use 0.95 min!
+
+
+person count: 1207498
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 1967130|407205| 28433| 0.01445405235037847|  0.337230372224219|
+|   3| 4680047|183079|120548| 0.02575786097874658|0.15161847058959932|
+|   4| 8331032|199721| 77005|0.009243152589018984|0.16540068803426589|
+|   2| 4947493|236365| 79188|0.016005682069686607|0.19574773622813454|
+|  10|19925702|617750|305174| 0.01531559590723579| 0.5115950502609529|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.5333333333333333 min!
+
+
+-----------currently calculate package 92 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 98 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190902/6edc32289e6841788958413096cf006c
+crowd cluster amount is : 1207498
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 873891
+transform crowd cluster use 0.8666666666666667 min!
+
+
+person count: 1207498
++----+--------+------+------+--------------------+-------------------+
+|site|   imppv| impuv| clkpv|                 ctr|           impratio|
++----+--------+------+------+--------------------+-------------------+
+|   1| 1967130|407205| 28433| 0.01445405235037847|  0.337230372224219|
+|   3| 4680047|183079|120548| 0.02575786097874658|0.15161847058959932|
+|   4| 8331032|199721| 77005|0.009243152589018984|0.16540068803426589|
+|   2| 4947493|236365| 79188|0.016005682069686607|0.19574773622813454|
+|  10|19925702|617750|305174| 0.01531559590723579| 0.5115950502609529|
++----+--------+------+------+--------------------+-------------------+
+
+write result finish, use: 0.36666666666666664 min!
+
+
+-----------currently calculate package 93 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 99 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200220/eb241802344646cb9bcef93e84dc9cd2
+crowd cluster amount is : 11036790
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 8681482
+transform crowd cluster use 0.7166666666666667 min!
+
+
+person count: 11036790
++----+--------+-------+-------+--------------------+-------------------+
+|site|   imppv|  impuv|  clkpv|                 ctr|           impratio|
++----+--------+-------+-------+--------------------+-------------------+
+|   1|17375647|4381510| 106247|0.006114707555925831|0.39699133534297565|
+|   3|15446336|1948105| 296828|  0.0192167255716825|0.17651010846450824|
+|   4|34479985|2414943| 471952|0.013687708970871073| 0.2188084578940072|
+|   2|27250919|3268897| 411498|0.015100334781370125| 0.2961818608490331|
+|  10|94552887|6701668|1286525|0.013606406327921008| 0.6072116983289525|
++----+--------+-------+-------+--------------------+-------------------+
+
+write result finish, use: 0.25 min!
+
+
+-----------currently calculate package 94 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 100 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200305/125767a48ea344b5a0ef41434178d1e8
+crowd cluster amount is : 196013155
+read crowd cluster use 0.2 min!
+dixtinct count joins: 139791491
+transform crowd cluster use 0.8 min!
+
+
+person count: 196013155
++----+----------+--------+--------+--------------------+-------------------+
+|site|     imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+----------+--------+--------+--------------------+-------------------+
+|   1| 184126315|51146604| 1600193|0.008690734944649276|0.26093454798990406|
+|   3| 254331682|28694423| 5921614|0.023283037148317212|0.14639029201892087|
+|   4| 645808478|35761855| 8577733| 0.01328216226978674|0.18244619857274375|
+|   2| 363634905|44190631| 6302325|0.017331463270832046|0.22544727163847753|
+|  10|1447901380|94000633|22401865|  0.0154719550029022| 0.4795628793383791|
++----+----------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 0.5 min!
+
+
+-----------currently calculate package 95 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 101 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200318/b1a11c7dd8ec4975b88d1d5d2bc2f01b
+crowd cluster amount is : 50000000
+read crowd cluster use 0.3 min!
+dixtinct count joins: 39192288
+transform crowd cluster use 0.85 min!
+
+
+person count: 50000000
++----+---------+--------+-------+--------------------+----------+
+|site|    imppv|   impuv|  clkpv|                 ctr|  impratio|
++----+---------+--------+-------+--------------------+----------+
+|   1| 67779004|19332974| 463867|  0.0068438155272981|0.38665948|
+|   3| 73672500| 9064154|1472580|0.019988190980352233|0.18128308|
+|   4|118289759| 8832928|1648557|0.013936599532678057|0.17665856|
+|   2| 77188542|10184051|1387316| 0.01797308206702492|0.20368102|
+|  10|336929805|28189143|4972320|0.014757732697467949|0.56378286|
++----+---------+--------+-------+--------------------+----------+
+
+write result finish, use: 0.5666666666666667 min!
+
+
+-----------currently calculate package 96 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 102 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191114/58d4f867734549f7beb33b7702d31189
+crowd cluster amount is : 82498
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 56136
+transform crowd cluster use 0.25 min!
+
+
+person count: 82498
++----+------+-----+-----+--------------------+-------------------+
+|site| imppv|impuv|clkpv|                 ctr|           impratio|
++----+------+-----+-----+--------------------+-------------------+
+|   1|166443|25808| 6467|0.038854142258911456|0.31283182622609035|
+|   3| 90440|10570| 4554|0.050353825740822644|0.12812431816528885|
+|   4|280600|12431| 5059|0.018029223093371346| 0.1506824407864433|
+|   2|164758|13971| 7040| 0.04272933635999466|0.16934955998933307|
+|  10|702241|38801|23120| 0.03292317025066893|0.47032655337099083|
++----+------+-----+-----+--------------------+-------------------+
+
+write result finish, use: 0.6333333333333333 min!
+
+
+-----------currently calculate package 97 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 103 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20190823/32d4a5ce71c94f48ac9920b25ab187d5
+crowd cluster amount is : 147690706
+read crowd cluster use 0.08333333333333333 min!
+dixtinct count joins: 97891766
+transform crowd cluster use 0.9833333333333333 min!
+
+
+person count: 147690706
++----+---------+--------+--------+--------------------+-------------------+
+|site|    imppv|   impuv|   clkpv|                 ctr|           impratio|
++----+---------+--------+--------+--------------------+-------------------+
+|   1|116560128|34130790|  890500|0.007639833751726834| 0.2310963968172784|
+|   3|173995519|19315969| 4086300|0.023485087567111426| 0.1307866251245356|
+|   4|341873190|21947351| 5092772|0.014896669727158189|0.14860346730281052|
+|   2|238385847|29836757| 4040195| 0.01694813283105687|0.20202189973958146|
+|  10|870814684|62724780|14109767|0.016202950247908313| 0.4247036370724641|
++----+---------+--------+--------+--------------------+-------------------+
+
+write result finish, use: 0.48333333333333334 min!
+
+
+-----------currently calculate package 98 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 104 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20191114/58d4f867734549f7beb33b7702d31189
+crowd cluster amount is : 82498
+read crowd cluster use 0.016666666666666666 min!
+dixtinct count joins: 56136
+transform crowd cluster use 0.31666666666666665 min!
+
+
+person count: 82498
++----+------+-----+-----+--------------------+-------------------+
+|site| imppv|impuv|clkpv|                 ctr|           impratio|
++----+------+-----+-----+--------------------+-------------------+
+|   1|166443|25808| 6467|0.038854142258911456|0.31283182622609035|
+|   3| 90440|10570| 4554|0.050353825740822644|0.12812431816528885|
+|   4|280600|12431| 5059|0.018029223093371346| 0.1506824407864433|
+|   2|164758|13971| 7040| 0.04272933635999466|0.16934955998933307|
+|  10|702241|38801|23120| 0.03292317025066893|0.47032655337099083|
++----+------+-----+-----+--------------------+-------------------+
+
+write result finish, use: 0.4166666666666667 min!
+
+
+-----------currently calculate package 99 -----------
+ ignore: -XX:+UseMembar
+ ignore: -XX:+UseConcMarkSweepGC
+ ignore: -XX:+CMSParallelRemarkEnabled
+ ignore: -XX:+CMSScavengeBeforeRemark
+ ignore: -XX:+UseCMSCompactAtFullCollection
+ ignore: -XX:+CMSClassUnloadingEnabled
+0
+current posi: 105 and the path is : hdfs://ss-tad-1-v2/user/adservice/package/20200402/c002dac8069b40c680cc51088655954f
+crowd cluster amount is : 9529632
+read crowd cluster use 0.06666666666666667 min!
+dixtinct count joins: 6048028
+transform crowd cluster use 0.95 min!
+
+
+person count: 9529632
++----+--------+-------+------+--------------------+-------------------+
+|site|   imppv|  impuv| clkpv|                 ctr|           impratio|
++----+--------+-------+------+--------------------+-------------------+
+|   1| 3829886|1184398| 30616|0.007993971622131833|0.12428580662925913|
+|   3| 8582845| 914973|208261|  0.0242647979778267| 0.0960134662072995|
+|   4|24902262|1492238|378036|0.015180789600559179|0.15658925759147888|
+|   2|24303228|2632164|379322|0.015607885503933881| 0.2762083572587063|
+|  10|61618221|3715330|996235| 0.01616786372329704|0.38987129828308165|
++----+--------+-------+------+--------------------+-------------------+
+
+write result finish, use: 0.7166666666666667 min!
+
+
+CalGDTPV finish, use 184.83333333333334 min!
+
+
